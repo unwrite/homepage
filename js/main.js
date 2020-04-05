@@ -1,4 +1,4 @@
-const POST_URL = 'https://api.producthunt.com/widgets/upcoming/v1/upcoming/please-stack/forms'
+const POST_URL = 'https://api.producthunt.com/widgets/upcoming/v1/upcoming/unwrite/forms'
 
 const emailForm = document.getElementById('form')
 const emailField = document.getElementById('email')
