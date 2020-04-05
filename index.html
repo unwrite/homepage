@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Please</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <link defer rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero is-success is-fullheight has-background-dark">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+            Please
+          </h1>
+          <h2 class="subtitle is-3">
+            Your startup, from idea to production in 5mn
+          </h2>
+          <div class="columns">
+            <div class="box column is-narrow has-background-white-bis">
+              <h3 class="subtitle is-4 has-text-dark">
+                <label for="email">Get updates or join our beta</label>
+              </h3>
+
+              <div id="success" style="display:none">
+                <h1 class="title is-5 has-text-dark">
+                  🎉 Thank you for signing up 🎉
+                </h1>
+                <span
+                  >We have just sent you an email. <br />Please check your inbox
+                  to confirm your email address.
+                </span>
+              </div>
+
+              <div id="form" class="field is-grouped">
+                <div class="control is-expanded has-icons-left has-icons-right">
+                  <input
+                    id="email"
+                    class="input is-medium"
+                    type="email"
+                    placeholder="Email"
+                  />
+                  <span class="icon is-left">
+                    ✉️
+                  </span>
+                  <span
+                    class="icon is-right has-text-success"
+                    id="email-validation"
+                  >
+                  </span>
+                  <div class="inline-error">
+                    <p id="email-invalid" class="help has-text-danger">
+                      This email is invalid
+                    </p>
+                  </div>
+                </div>
+                <div class="control">
+                  <button
+                    id="submit"
+                    onClick="subscribe()"
+                    class="button is-medium is-link"
+                  >
+                    <label for="submit">Submit</label>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        alt="Milky Way"
+        class="hero-background is-transparent"
+        src="img/background.jpg"
+      />
+    </section>
+  </body>
+</html>
